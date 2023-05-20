@@ -7,6 +7,12 @@ int main(void)
 {
 	char c;
 
+	c = 0x30;
+	while (c <= 0x39)
+	{
+		putchar(c);
+		c++;
+	}
 	c = 0x61;
 	while (c <= 0x7A)
 	{
