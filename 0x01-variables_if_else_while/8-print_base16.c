@@ -14,7 +14,7 @@ int main(void)
 		c++;
 	}
 	c = 0x61;
-	while (c <= 0x7A)
+	while (c <= 0x66)
 	{
 		putchar(c);
 		c++;
