@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagnol - prints diagnoal line
+ * print_diaganol - prints diagnoal line
  * @n: amount out times \ is printed
  */
 void print_diagonal(int n)
