@@ -1,0 +1,8 @@
+#include "main.h"
+/**
+ * print_triangle - function that prints triangle
+ * @size: size of triangle
+ */
+void print_triangle(int size)
+{
+	
