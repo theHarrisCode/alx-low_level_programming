@@ -17,7 +17,7 @@ char *leet(char *str)
 		while (j < 10) /* size of both letters and numbers array*/
 		{
 			if (*(str + i) == *(letters + j))
-				*(str + i) = *(numbers +j);
+				*(str + i) = *(numbers + j);
 			j++;
 		}
 		i++;
