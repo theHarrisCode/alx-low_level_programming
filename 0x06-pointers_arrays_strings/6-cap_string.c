@@ -11,16 +11,13 @@ char *cap_string(char *str)
 	i = 0;
 	while (*(str + i) != '\0')
 	{
-/**
- *		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
- *		       || str[i] == ',' || str[i] == ';' || str[i] == '.'
- *		       || str[i] == '!' || str[i] == '?' || str[i] == '"'
- *		       || str[i] == '(' || str[i] == ')' ||  str[i] == '}'
- *		       || str[i] == '{')
- */
-		switch (*(str +i))
+
+ 		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
+		    || str[i] == ',' || str[i] == ';' || str[i] == '.'
+		    || str[i] == '!' || str[i] == '?' || str[i] == '"'
+		    || str[i] == '(' || str[i] == ')' ||  str[i] == '}'
+		    || str[i] == '{')
 		{
-		case ' ':
 			for (j = 'a'; j <= 'z'; j++)
 			{
 				if (*(str + (i + 1)) == j)
@@ -28,117 +25,6 @@ char *cap_string(char *str)
 					*(str + (i + 1)) -= 32;
 				}
 			}
-			break;
-		case '\t':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '\n':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case ',':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case ';':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '.':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '!':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '?':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '"':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '(':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case ')':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '{':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		case '}':
-			for (j = 'a'; j <= 'z'; j++)
-			{
-				if (*(str + (i + 1)) == j)
-				{
-					*(str + (i + 1)) -= 32;
-				}
-			}
-			break;
-		default:
-			break;
 		}
 		i++;
 	}
