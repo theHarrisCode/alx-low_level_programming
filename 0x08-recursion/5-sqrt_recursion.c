@@ -4,12 +4,18 @@
  * @n: number to be checked
  * Return: @value of the square root
  */
+int _power(int n, int i)
+{
+	if (i > n)
+		return (-1);
+	else if (i * i != n)
+		_power(n, i + 1);
+        return (i);
+}
 int _sqrt_recursion(int n)
 {
-	int value;
+	int i;
 
-	value = n;
-	if ((n * n) != value) /**base case*/
-		return (-1);
-	return _sqrt_recursion(n - 1);
+	i = 1;
+	return (_power(n, i));
 }
