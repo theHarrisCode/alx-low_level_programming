@@ -1,0 +1,16 @@
+#include <stdio.h>
+/**
+ * main - prints everything that the command line recieves
+ * @argc: argument count
+ * @argv: argument vector, one-dimensional array
+ * Return: 0 Always(Success)
+ */
+int main(int argc, char argv[])
+{
+	int counter;
+
+	for (counter = 0; counter < argc; count++)
+	{
+		printf("%s\n", argv[counter]);
+	}
+	return (0);
