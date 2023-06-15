@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int int1, int2, sum;
+	int int1, int2, product;
 
 	if (argc <= 2)
 	{
@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 	}
 	int1 = atoi(argv[1]);
 	int2 = atoi(argv[2]);
-	sum = int1 + int2;
-	printf("%d\n", sum);
+	product = int1 * int2;
+	printf("%d\n", product);
 	(void)argc;
 	return (0);
 }
