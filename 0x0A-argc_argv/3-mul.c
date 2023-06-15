@@ -10,6 +10,11 @@ int main(int argc, char *argv[])
 {
 	int int1, int2, sum;
 
+	if (argc <= 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	int1 = atoi(argv[1]);
 	int2 = atoi(argv[2]);
 	sum = int1 + int2;
