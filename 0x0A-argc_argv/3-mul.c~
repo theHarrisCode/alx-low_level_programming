@@ -1,0 +1,20 @@
+#include <stdio.h>
+/**
+ * main - multiplies two numbers
+ * @argc: number of arguments in command line
+ * @argv: argument vector, one dimensional array
+ * Return: 0 Always (Success)
+ */
+int main(int argc, char *argv[])
+{
+	int i, sum;
+
+	sum = 0;
+	for (i = 1; i <= argc; i++)
+	{
+		sum += *(argv[i] - '0');
+		printf("%d\n", sum);
+	}
+	printf("%d\n", sum);
+	return (0);
+}
