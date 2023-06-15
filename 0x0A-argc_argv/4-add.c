@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * main - a program that adds positive numbers
- * @argc - argument count, the amount of arguments in command line
- * @argv - argument vector, the strings in the character
+ * @argc: argument count, the amount of arguments in command line
+ * @argv: argument vector, the strings in the character
  * Return: 0 (Pass), 1 (Error)
  */
 int main(int argc, char *argv[])
