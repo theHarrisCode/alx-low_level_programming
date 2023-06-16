@@ -20,7 +20,6 @@ char *create_array(unsigned int size, char c)
 		{
 			*(ar + i) = c;
 		}
-		free(ar);
 		return (ar);
 	}
 	return (NULL);
