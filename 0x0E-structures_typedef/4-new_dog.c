@@ -14,9 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
     dog_t *d;
     int name_length, owner_length;
-
     /***** Add 1 because in _strlen we only count until the string terminator char ******/
-
     if (name != NULL && owner != NULL)
     {
         name_length = _strlen(name) + 1;
