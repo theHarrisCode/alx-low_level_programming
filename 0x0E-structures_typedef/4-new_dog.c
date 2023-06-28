@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
     dog_t *d;
     int name_length, owner_length;
-    /***** Add 1 because in _strlen we only count until the string terminator char ******/
+    /*Add 1 b/c in _strlen we only count until the string terminator char*/
     if (name != NULL && owner != NULL)
     {
         name_length = _strlen(name) + 1;
@@ -39,26 +39,26 @@ dog_t *new_dog(char *name, float age, char *owner)
         }
         _strcpy(d->owner, owner);
         return (d);
-    }   
+    }
     return (NULL);
 }
 
 int _strlen(char *s)
 {
     int i, j;
-    
+
     j = 0;
     for(i = 0; *(s + i) != '\0'; i++)
-        j++;
+	    j++;
     return(j);
 }
 
 char *_strcpy(char *dest, char *src)
 {
-int i = 0;
+	int i = 0;
 
-for (; *(src + i) != '\0'; i++)
-    *(dest + i) = *(src + i);
-*(dest + i++) = '\0';
-return (dest);
+	for (; *(src + i) != '\0'; i++)
+		*(dest + i) = *(src + i);
+	*(dest + i++) = '\0';
+	return (dest);
 }
